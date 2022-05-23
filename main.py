@@ -11,7 +11,7 @@ import asyncio
 
 bot = commands.Bot(command_prefix='/',help_command=None)
 slash_client = SlashCommand(bot, sync_commands=True)
-Token = "OTcwNzE1NDg1MzAzODgxODY4.GWcUCp.ErJI0ETWnf9kuC3HsAqqCCpZzUx273U3wLOgYg"
+Token = ""
 max_ticket = 3
 
 @slash_client.slash(
