@@ -52,7 +52,7 @@ async def create(ctx):
     member_name = (ctx.member.name)
     name = (f"🎫-{member_name}")
     if len([i for i in ctx.guild.channels if i.name==name])>=max_ticket:
-        await ctx.reply('```チケットを開きすぎています。チケットを閉じてから新しいチケットを作成してください```',flags = MessageFlags().EPHEMERAL)
+        await ctx.reply('```チケットを開きすぎています```',flags = MessageFlags().EPHEMERAL)
         return
     category_id = int(ctx.custom_id.replace('ticket', ''))
     category = ctx.guild.get_channel(category_id)
